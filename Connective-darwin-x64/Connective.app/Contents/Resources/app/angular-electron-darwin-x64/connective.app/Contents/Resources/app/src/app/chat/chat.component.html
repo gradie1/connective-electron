@@ -1,0 +1,53 @@
+<section class="main flex column justify-between" id="main">
+
+  <div>
+
+      <div class="top flex align-center">
+          <div class="img cover" [style.background-image]="'url(' + (user | async)?.image + ')'"></div>
+          <div class="name bold">{{ (user | async)?.firstName }} {{ (user | async)?.lastName }}</div>
+        </div>
+      
+        <div class="messages" id="messages" >
+      
+            <div class="time flex justify-center">
+                <div class="line"></div>
+                <div class="flex justify-center align-center frame">
+                    <div class="back"></div>
+                    <div class="date light">{{senderName}}</div>
+                </div>
+              </div>
+      
+              <ng-container *ngFor="let msg of messages | async">
+
+                <div class="message flex justify-start" *ngIf="msg.sender != uid && msg.receiverId == uid && msg.sender == sentId">
+                    <div>
+                        <div class="img cover" [style.background-image]="'url(' + (sender | async)?.image + ')'"></div>
+                        <div class="when light">{{getTime(msg.date)}}</div>
+                    </div>
+                    <div class="text shadow-1">{{msg.message}}</div>
+                  </div>
+          
+                  <div class="message flex justify-end" *ngIf="msg.sender == uid && msg.sender == uid && msg.receiverId == sentId">
+                      <div class="text shadow-1">{{msg.message}}</div>
+                      <div>
+                          <div class="img cover" [style.background-image]="'url(' +currentUserImage+ ')'"></div>
+                          <div class="when light">{{getTime(msg.date)}} </div>
+                      </div>
+                    </div>
+
+              </ng-container>
+                
+      
+        </div>
+
+  </div>
+
+  <div class="bottom flex justify-between align-center">
+    <input type="text" class="type" placeholder="Type a Message.." [(ngModel)]="message">
+    <div class="flex">
+        <!-- <div class="img image contain"></div> -->
+        <div class="img send contain" (click)="sendMessage()"></div>
+    </div>
+  </div>
+
+</section>

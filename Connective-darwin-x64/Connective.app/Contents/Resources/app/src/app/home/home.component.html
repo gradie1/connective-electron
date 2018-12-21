@@ -1,0 +1,52 @@
+
+<section class="main flex justify-between align-start">
+
+    <section class="left ">
+
+        <div class="top">
+
+        <div class="title bold">CHATS</div>
+
+        <mat-form-field class="search">
+            <input matInput placeholder="Search.." [(ngModel)]="search" (keyup)="filterUsers()">
+          </mat-form-field>
+
+        </div>
+
+        <div class="line flex justify-center">
+            <div class="l"></div>
+        </div>
+
+        <div class="list ">
+
+            <ng-container *ngFor="let user of users | async">
+                <div class="item flex justify-between align-center" *ngIf="user.id != currentUserId" (click)="loadChat(user.id)">
+                    <div class="flex align-center wrapper">
+                            <div class="img cover" [style.background-image]="'url(' + user.image + ')'"></div>
+                            <div class="details">
+                                <div class="name bold">{{user.firstName}} </div>
+                                <div class="latest light">{{ user.email }}</div>
+                            </div>
+                    </div>
+                    <div class="time bold">{{user.gender}}</div>
+                </div>
+            </ng-container>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- CHAT COMPONENT -->
+    <app-chat [sentId] = "userId"></app-chat>
+
+    <!-- PROFIL COMPONENT -->
+    <app-profil></app-profil>
+
+
+</section>

@@ -1,0 +1,31 @@
+<section class="main flex column justify-start align-center">
+
+  <div class="img cover" [style.background-image]="'url(' + (user | async)?.image + ')'">
+    <div class="camera shadow-1" (click)="getImage()">
+      <div class="cimage contain"></div>
+    </div>
+  </div>
+  <div class="name bold">{{ (user | async)?.firstName }}</div>
+  <div class="email">{{ (user | async)?.email }}</div>
+
+  <div class="full flex justify-between">
+    <span class="title bold">Full name:</span>
+    <span class="small">{{ (user | async)?.firstName }} {{ (user | async)?.lastName }}</span>
+  </div>
+
+  <div class="full flex justify-between">
+      <span class="title bold">Phone:</span>
+      <span class="small">{{ (user | async)?.phone }}</span>
+    </div>
+
+    <div class="full flex justify-between">
+        <span class="title bold">Gender:</span>
+        <span class="small">{{ (user | async)?.gender == 'M' ? 'Male' : 'Female' }}</span>
+      </div>
+
+      <div class="full flex justify-end">
+        <button mat-raised-button (click)="logout()" class="logout">Logout</button>
+      </div>
+
+</section>
+

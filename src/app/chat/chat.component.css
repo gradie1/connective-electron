@@ -1,0 +1,124 @@
+.main{
+    height: 100%;
+    max-height: 100%;
+}
+
+.top{
+    padding: 20px 20px 38px;
+}
+
+.top .img{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    background-color: #1B1B3A;
+}
+
+.top .name{
+    margin-left: 20px;
+    color:#1B1B3A;
+}
+
+.time{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.time .line{
+    position: absolute;
+    margin:10px 0;
+    width: 90%;
+    height: 1px;
+    background-color: #c0c0c0;
+}
+
+.time .date{
+    font-size: .8em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.time .frame{
+    margin-top: 10px;
+}
+
+.frame .back{
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: #f8f8f8;
+}
+
+.messages{
+    max-height: 75vh;
+    overflow: auto;
+}
+
+.message{
+    margin: 10px 5px 15px;
+}
+
+.message .img{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    background-color: #1B1B3A;
+}
+
+.message .when{
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 4px;
+    font-size: .6em;
+}
+
+.message .text{
+    padding: 8px 10px 5px;
+    margin-left: 15px;
+    background-color: #fff;
+    font-size: .8em;
+    border-radius: 5px;
+}
+
+.bottom{
+    padding:20px 15px 10px;
+}
+
+.bottom .type{
+    width: 80%;
+    padding:10px;
+    background-color: #f8f8f8;
+    border:none;
+    outline: none;
+    font-size: .9em;
+}
+
+.bottom .img{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 50%;
+}
+
+.image{
+    background-image: url('../../assets/img/img.png');
+}
+
+.send{
+    padding-left: 10px;
+    background-image: url('../../assets/img/send.png');
+}

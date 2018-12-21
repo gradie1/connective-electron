@@ -1,0 +1,70 @@
+.main{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.main .img{ 
+    position: relative;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+}
+
+.main .name{
+    text-transform: capitalize;
+    padding:10px 0 3px;
+}
+
+.main .email{
+    font-size: .8em;
+}
+
+.full{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+}
+
+.full .title{
+    font-size: .9em;
+    padding-left: 10px;
+}
+
+.full .small{
+    text-transform: capitalize;
+    font-size: .8em;
+    padding-right: 10px;
+}
+
+.camera{
+    position:absolute;
+    bottom: 0px;
+    right:0px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.camera:hover{
+    cursor: pointer;
+}
+
+.cimage{
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+    background-image: url('../../assets/img/img.png');
+}
+.logout{
+   margin-right: 10px;
+}

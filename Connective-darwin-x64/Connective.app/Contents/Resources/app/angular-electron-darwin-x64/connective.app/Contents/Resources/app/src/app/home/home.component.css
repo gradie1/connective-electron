@@ -1,0 +1,111 @@
+/deep/ .mat-focused .mat-form-field-label {
+    color: #e63462 !important;
+}
+
+/deep/ .mat-form-field-ripple {
+    background-color: #ce4d78 !important;
+}
+
+/* MD  */
+.mat-accent {
+    background-color: #e62462;
+    color: #fff;
+}
+
+section.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8f8f8;
+    color:#1B1B3A;
+}
+
+section.left{
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+}
+
+app-chat{
+    width: 50%;
+    height: 100%;
+}
+
+app-profil{
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.left .top{
+    background-color: #fff;
+    width: 100%;
+}
+
+.left .title{
+    padding: 20px 5% 20px;
+}
+
+.left .search{
+    width: 90%;
+    margin-left: 5%;
+    font-size: .9em;
+}
+
+.left .line{
+    width:100%;
+    max-height: 100vh;
+    padding: 10px 0% 0px;
+    background-color: #fff;
+}
+
+.line .l{
+    width: 60%;
+    height: 1px;
+    background-color: #f0f0f0;
+}
+
+.list{
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.list .item{
+    padding:10px 0 15px;
+    width:100%;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.list .item:hover{
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+
+.list .item .img{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    background-color: #1B1B3A;
+}
+
+
+.list .item .name{
+    font-size: .9em;
+    padding-left: 10px;
+}
+
+.list .item .latest{
+    font-size: .8em;
+    padding-left: 10px;
+}
+
+.list .item .time{
+    color:#E63462;
+    font-size: .7em;
+    padding-right: 10px;
+}
