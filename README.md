@@ -1,4 +1,4 @@
-# AngularElectron
+# Connective Chat App (Angular, Electron)
 This an electron chat application that connects different users and enables them to exchange text messages. Developped with electron and angular.
 
 ## Download for Mac
