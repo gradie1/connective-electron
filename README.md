@@ -1,6 +1,9 @@
 # AngularElectron
+This an electron chat application that connects different users and enables them to exchange text messages. Developped with electron and angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+## Download for Mac
+
+Download <a href="https://github.com/gradie1/connective-electron/raw/master/Connective-darwin-x64/Connective.app/Contents/MacOS/Connective">Connective for Mac</a>
 
 ## Development server
 
@@ -26,6 +29,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Download for Mac
 
-Download <a href="https://github.com/gradie1/connective-electron/raw/master/Connective-darwin-x64/Connective.app/Contents/MacOS/Connective">Connective for Mac</a>
