@@ -11,6 +11,8 @@ import { map, filter } from 'rxjs/operators';
 import {User} from '../user';
 import { database } from 'firebase';
 
+import {ElectronService} from 'ngx-electron';
+
 
 @Component({
   selector: 'app-home',
@@ -31,7 +33,10 @@ export class HomeComponent implements OnInit {
   constructor(
     private afs: AngularFirestore,
     private auth: AngularFireAuth,
+    private el: ElectronService
   ) { 
+
+    //console.log(this.el.process.versions.electron); //3.0.13
 
     this.auth.authState.subscribe(user => {
       if (user && user.uid) {
@@ -82,6 +87,13 @@ export class HomeComponent implements OnInit {
 
   loadChat(id){
     this.userId = id;
+  }
+
+  callCpp(){
+    let hello = this.el.remote.require('./build/Release/addon');
+    console.log(this.el.remote.require('./build/Release/addon'));
+    this.el.remote.dialog.showErrorBox("A Call from C++",hello.Hello());
+    
   }
 
 }
