@@ -3,7 +3,7 @@ This an electron chat application that connects different users and enables them
 
 ## Download for Mac
 
-Download <a href="https://github.com/gradie1/connective-electron/raw/master/Connective-darwin-x64/Connective.app/Contents/MacOS/Connective">Connective for Mac</a>
+Download <a href="https://www.dropbox.com/s/gjtxs9ykwolqvnv/connective.zip?dl=0">Connective for Mac</a>
 
 ## Development server
 
